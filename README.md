@@ -1,4 +1,4 @@
-# birthday-app (working title)
+# birthday-desktop (working title)
 Desktop application for tracking upcoming birthdays
 
 ## Objective
