@@ -1,0 +1,3 @@
+[submodule "birthday-data"]
+	path = birthday-data
+	url = git@github.com:Chrinkus/birthday-data.git
