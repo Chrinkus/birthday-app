@@ -17,8 +17,8 @@ else()
     add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-include_directories(include)
-
-add_subdirectory(src)
-
+include_directories(birthday-data/include)
 add_subdirectory(birthday-data)
+
+include_directories(include)
+add_subdirectory(src)
