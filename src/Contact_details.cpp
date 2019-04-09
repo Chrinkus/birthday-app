@@ -13,6 +13,7 @@ Contact_details::Contact_details(int x, int y, int w, int h)
 
     for (int i = 0; i < children(); ++i) {
         child(i)->resize(x + w * 0.3, y + 8 + i * 8 + i * 20, w * 0.6, 20);
+        child(i)->box(FL_FLAT_BOX);
     }
 
     copy_label("Details");
