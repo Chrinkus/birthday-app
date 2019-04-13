@@ -12,8 +12,10 @@ Contact_details::Contact_details(int x, int y, int w, int h)
     end();
 
     for (int i = 0; i < children(); ++i) {
-        child(i)->resize(x + w * 0.3, y + 8 + i * 8 + i * 20, w * 0.6, 20);
-        child(i)->box(FL_FLAT_BOX);
+        auto po = static_cast<Fl_Output*>(child(i));
+        po->resize(x + w * 0.3, y + 8 + i * 8 + i * 20, w * 0.6, 20);
+        po->box(FL_FLAT_BOX);
+        po->cursor_color(FL_WHITE);
     }
 
     copy_label("Details");
